@@ -1,0 +1,123 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+html {
+  color: white;
+  @media screen and (max-width: 768px) {
+    font-size: 70% !important;
+  }
+  font-size: 80% !important;
+}
+.body {
+  background-color: $color-primary;
+}
+.bg-dark {
+  background-color: $color-primary-light !important;
+}
+.color {
+  color: rgba($color-white, 0.5) !important;
+}
+
+.border-color {
+  border-color: rgba($color-white, 0.5) !important ;
+}
+.bor-left {
+  @media screen and (min-width: 768px) {
+    border-left: 1px solid !important;
+  }
+}
+.outline-none {
+  outline: none !important;
+}
+
+.primary-light {
+  background-color: $color-primary-light !important;
+}
+
+.bg-active {
+  background: $color-span !important;
+}
+
+.active {
+  color: $color-span !important;
+}
+
+.container {
+  margin: 0 auto !important;
+  max-width: 63rem !important;
+}
+.container-2 {
+  margin: 0 auto !important;
+  max-width: 80rem !important;
+}
+.list-style {
+  list-style: none !important;
+}
+
+.colorWhite {
+  color: white !important;
+}
+.formBorder {
+  border: 1px solid #121c28 !important;
+}
+.max {
+  max-width: 50rem !important;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  #careers {
+    overflow-x: scroll !important;
+  }
+  .subscribe {
+    width: 100% !important;
+  }
+  .bg-none {
+    background: none !important;
+  }
+  .checks {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .recieve {
+    text-align: right !important;
+  }
+}
+.career-items,
+.job,
+.star-container {
+  transition: all 0.3s;
+  &:hover {
+    background: linear-gradient(0deg, #030b16, #030b16),
+      linear-gradient(0deg, #121c28, #121c28);
+  }
+}
+.footer {
+  border-top: 1px double rgba(217, 217, 217, 0.3) !important;
+
+  &-right {
+    a,
+    p {
+      text-decoration: none;
+      color: white !important ;
+      display: block;
+      margin: 1.2rem 0 !important;
+      font-size: 1.2rem !important;
+    }
+    .roles-container {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5rem;
+    }
+  }
+  .terms {
+    gap: 2rem;
+  }
+}
